@@ -14,3 +14,6 @@ class FlaskTests(TestCase):
 
             self.assertEqual(resp.status_code, 200)
             self.assertIn('<td>', html)
+
+    def test_word_submission(self):
+        with app.test_client() as client:

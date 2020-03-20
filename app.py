@@ -18,4 +18,5 @@ def render_board():
     board = boggle_game.make_board()
     return render_template("board.html", board=board)
 
-app.route('/check-word')
+@app.route('/check-word')
+def check_word():
