@@ -1,0 +1,23 @@
+td {
+  width: 100px;
+  height: 100px;
+  border: 2px solid darkblue;
+  background-color: rgb(253, 250, 232);
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 700;
+  border-radius: 10%;
+}
+
+table {
+  background-color: darkblue;
+  margin: auto auto;
+  padding: 50px;
+  border-radius: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
