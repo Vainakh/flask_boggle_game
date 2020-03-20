@@ -12,11 +12,26 @@ app.config['SECRET_KEY'] = "secret"
 
 debug = DebugToolbarExtension(app)
 
+BOARD = []
 
 @app.route("/")
 def render_board():
-    board = boggle_game.make_board()
-    return render_template("board.html", board=board)
+    BOARD = boggle_game.make_board()
+    return render_template("board.html", board=BOARD)
+
 
 @app.route('/check-word')
 def check_word():
+    word = request.args["word-submission"]
+    result = boggle_game.check_valid_word(BOARD, word)
+
+    if result == "ok":
+        
+    # if word_exists and valid_word:
+    #         result = "ok"
+    #     elif word_exists and not valid_word:
+    #         result = "not-on-board"
+    #     else:
+    #         result = "not-word"
+
+
