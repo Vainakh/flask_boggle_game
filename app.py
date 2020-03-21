@@ -33,5 +33,3 @@ def check_word():
     #         result = "not-on-board"
     #     else:
     #         result = "not-word"
-
-
